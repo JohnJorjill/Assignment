@@ -150,3 +150,7 @@ ul{
     top: 600px;
     height: 83px;
 }
+
+.review img{
+    float: left;
+}

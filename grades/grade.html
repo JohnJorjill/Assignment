@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Retrieve Grade</title>
+</head>
+
+<body>
+    <form action="http://mumstudents.org/params.php">
+        <label for="fname">Student name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Student ID:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="course">Select course:</label><br>
+        <select name="courses" id="courses">
+            <option value="FPP">FPP</option>
+            <option value="MPP">MPP</option>
+            <option value="WAP">WAP</option>
+            <option value="STC">STC</option>
+        </select><br>
+        <label for="course">Select entry:</label><br>
+        <input type="radio" id="fpp" name="entry" value="fpp">
+        <label for="fpp">FPP</label><br>
+        <input type="radio" id="mpp" name="entry" value="mpp">
+        <label for="mpp">MPP</label><br>
+        <label for="agreement">Do you agree to terms?</label><br>
+        <input type="checkbox" id="yes" name="yes" value="yes"><label for="Yes">Yes</label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+        <a href="http://validator.w3.org/check?uri=referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
+          document.URL"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31"
+                width="88" /></a>
+
+
+    </div>
+</body>
+
+</html>

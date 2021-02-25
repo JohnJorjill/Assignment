@@ -147,10 +147,19 @@ ul{
 .valid{
     position: fixed;
     right: 0;
-    top: 600px;
-    height: 83px;
+    bottom: 10px;
+    opacity: 50%;
 }
 
 .review img{
     float: left;
+}
+
+dt{
+    margin: 10px;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
 }

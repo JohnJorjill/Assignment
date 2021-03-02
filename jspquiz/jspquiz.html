@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSP Quiz</title>
+</head>
+<body>
+    <p>1. Java Server Pages allow to add Java functionalities into HTML</p>
+    <p>2. Servlets are Java classes that runs on server and use request,response. JSP is compiled into a servlet which make response to client.</p>
+    <p>3. JSP files contain HTML tags inside them, so that it can combine with Java code which is inside JSP tags.</p>
+    <p>4. JSP scriptlet is with <% %> tag and used to contain Java code inside JSP file for example <% request.getAttribute("attribute"); %></p>
+    <p>5. Declaration tag is used to declare instance variable, methods, classes for example <%! int count =10; %></p>
+    <p>6. Comment in JSP is <%-- Comment --%> </p>
+    <p>7. Expression  <%= expression %> is used for print something like <%=beer%> is same as <% out.print(beer) %></p>
+    <p>8. JSP directive affects the overall structure of the servlet class. <%@ page %></p>
+    <p>9. ${} can replace <%= %> for example <%= ((Person) request.getAttribute(“person”)).getDog().getName() %> is equivalent to ${person.dog.name}</p>
+    <p>10. servlet attributes provide data which can be accessed by el expressions from jsp, for example s.setAttribute("choice1", request.getParameter("radioJSPCool")); attribute can be accessed with  ${choice1==1?'checked':''}</p>
+    <p>11. Servlets use RequestDispatcher object to create jsp like RequestDispatcher dispatch = request.getRequestDispatcher("Choose.jsp"); and then forwards with dispatch.forward(request, response); </p>
+</body>
+</html>

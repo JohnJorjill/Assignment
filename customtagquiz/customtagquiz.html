@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tag Quiz</title>
+</head>
+<body>
+    <p>1. </p>
+<pre>
+<code>
+    <% Student[] students = (Student[]) request.getAttribute("students"); %>
+    <% for(Student s : students){ %>
+    
+           <tr>      
+               <td><%=s.getName()%></td>
+               <td><%=s.getAge()%></td>
+           </tr>
+           
+       <% } %>
+</code>
+</pre>
+    <p>2. JSTL provides 5 types of tags, but you can make your own custom tags using JSTL</p>
+    <p>3. It provides links to the library where custom tags are located</p>
+    <p>4. Tag handler classes extends SimpleTagSupport and defines behaviour of tags, for example doTag() defines how tag will appear</p>
+    <p>5. it takes values from the tag's property and passes it into the instance variable of the tag handler class</p>
+    <p>6. doTag() defines how tag will appear</p>
+    <p>7. it will just render "Hi Bob" text where the tag is</p>
+    <p>8. When getJspBody().invoke(null) is called, tag body's JSP will be called and the resulting output will be passed to the client instead  of JSP itself. </p>
+  </body>
+</html>

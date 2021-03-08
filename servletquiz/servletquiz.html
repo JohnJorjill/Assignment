@@ -10,10 +10,10 @@
     <p>2. Servlet is a class which is used to implement server side logic and allow to write a web application. Servlets can use request object and generate response objects.</p>
     <p>3. Web containers are used to manage Servlets and is responsible to manage it's lifecycle such as creating or destroying a servlet. Web server is responsible for managing HTTP requests and responses.</p>
     <p>4. request objects are created by Web Containers which is responsible for managing request and response objects and pass it to servlets.</p>
-    <p>5. instantiation->initialization->implementation->destruction</p>
+    <p>5. (explain) instantiation->initialization->implementation->destruction</p>
     <p>6. servlet container calls init when there will be request</p>
     <p>7. we always override either doGet or doPost or both of them</p>
-    <p>8. servlet instance's methods can be called simultaneously because they are thread safe, which means each call will have a their own local variables, which won't affect each other's.</p>
-    <p>9. ?</p>
+    <p>8. Each thread will still have their own stack, which means, each thread will have a different copy of local variables to work on. As a result there will be no interference between threads and you won't have to worry about concurrent calls. </p>
+    <p>X 9. ?</p>
 </body>
 </html>

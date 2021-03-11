@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+        <link href="account.css" type="text/css" rel="stylesheet" />
+        
+		<script src="account.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<!-- Your UI controls go here -->
+		
+			<fieldset>
+                <legend>Create Account</legend>
+                <label for="tfName">Account name</label></br>
+                <input type="text" id="tfName" name="tfName"/></br><br>
+                
+                <label for="accountType">Account type</label><br>
+                <select id="accountType" name="accountType">
+                    <option value="Checking" selected>Checking</option>
+                    <option value="Saving">Saving</option>
+                    <option value="Business">Business</option>
+                </select><br><br>
+
+                <label for="tfDeposit">Deposit</label></br>
+                <input type="text" id="tfDeposit"/></br>
+                <br>
+                <button id="btnCreate">Create Account</button>
+                
+			</fieldset>
+
+			<fieldset>
+				<legend>Account list</legend>
+				<textarea id="taAccountList" cols="100" rows="10"></textarea>
+			</fieldset>
+
+			<p>
+				<a href="https://validator.w3.org/check/referer" referrerpolicy="no-referrer-when-downgrade">
+				<img src="http://www.w3.org/Icons/valid-xhtml10" height="31" width="88" alt="Validate HTML"/>
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="no-referrer-when-downgrade">
+				<img src="https://jigsaw.w3.org/css-validator/images/vcss" height="31" width="88" alt="Validate CSS"/>
+				</a>
+			</p>
+		</div>
+		
+	</body>
+</html>

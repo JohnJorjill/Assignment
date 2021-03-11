@@ -1,0 +1,21 @@
+textarea{
+    border: 1px solid gray;
+    text-align: left;
+    resize: none;
+    overflow: auto;
+}
+
+fieldset{
+    border: 1px solid gray;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content{
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}

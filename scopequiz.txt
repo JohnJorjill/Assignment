@@ -1,0 +1,51 @@
+1. 10 8 8 9 10 1
+2. method is inside a class, function can exists without a class
+3. this is a reference to the current object, the object whose method or constructor is being called
+4. The JavaScript this keyword refers to the object it belongs to.
+5. The value of this, when used in an object, is the object itself.
+6. it refers to the self, which is x
+7. free variable are variables which can be used in a closure (not passed as a parameter or declared locally)
+8. 
+
+var person = {
+    name: "fred",
+    major: "music",
+    compare : function(x,y) {
+        let squares = [];
+        if(x>y){
+            return y;
+        }else if (x<y){
+            return x;
+        }else{
+            squares[0] = x*x;
+            squares[1] = y*y;
+            return squares;
+        }
+    }
+};
+
+9. 
+
+function Employee(name, salary, position) {
+  this.name = name;
+  this.salary = salary;
+  this.position = position;
+}
+
+var e1 = new Employee("John",40000,"janitor");
+var e2 = new Employee("Derek",40000,"driver");
+var e3 = new Employee("Jane",50000,"cook");
+
+10. 
+
+function multiply(...theArgs) {
+  return theArgs.reduce((previous, current) => {
+    return previous*current;
+  });
+}
+
+11.
+
+var max = (x,y,z) => {
+  return Math.max(x,y,z);
+}
